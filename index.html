@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,41 +19,98 @@
     header{
       background: url(/images/mobile/image-header.jpg) no-repeat;
       background-size: 100%;
-      height: 500px;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+    }
+    .background-chery{
+      background: url(/images/mobile/image-graphic-design.jpg) no-repeat;
+      background-size: 100%;
+      height: 400px;
+      padding: 25px;
+    }
+    .background-orange{
+      background: url(/images/mobile/image-photography.jpg) no-repeat;
+      background-size: 100%;
+      height: 400px;
+      padding: 25px;
+    }
+    .menu{
+        display: none;
+    }
+    .flex{
+      display: flex;
+    }
+    .column{
+      flex-direction: column;
+    }
+    .column-reverse{
+      flex-direction: column-reverse;
+    }
+    .text-intern{
+      text-align: center;
+    }
+    .title{
+      font-family: 'Fraunces', serif;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Logo do Site" loading="lazy"/>
-    <img src="images/icon-hamburger.svg" alt="Logo do Site" loading="lazy"/>
+    <div class="logo"><img src="images/logo.svg" alt="Logo do Site" loading="lazy"/></div>
+    <nav>
+      <img src="images/icon-hamburger.svg" alt="Logo do Site" loading="lazy"/>
+      <div class="menu">
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>  
+      </div>
+    </nav> 
   </header>
-  <!-- About
-  Services
-  Projects
-  Contact
+  <main>
+    <section class="flex column-reverse">
+      <div class="text-intern">
+        <h1 class="title">Transform your brand</h1>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button>Learn more</button>
+      </div>
+      <img src="images/mobile/image-transform.jpg"/>
+    </section>
+    <section class="flex column">
+      <img src="images/mobile/image-stand-out.jpg"/>
+      <div class="text-intern">
+        <h1 class="title">Stand out to the right audience</h1>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>       
+        <button>Learn more</button>
+      </div>
+    </section>
+    <section class="flex column">
+      <div class="text-intern background-chery">
+        <h1 class="title">Graphic design</h1>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div class="text-intern background-orange">
+        <h1 class="title">Photography</h1>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+     </div>
+    </section>
 
-  We are creatives
+  </main>
+  <!-- 
 
-  Transform your brand
+  We are creatives - adicionar na laranja
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
 
-  Learn more
 
-  Stand out to the right audience
+  
+  
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
+  
   Client testimonials
 
   We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
