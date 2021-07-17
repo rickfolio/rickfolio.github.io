@@ -16,6 +16,9 @@
       margin: 0;
       padding: 0;
     }
+    .container{
+      padding: 0 15px;
+    }
     header{
       background: url(/images/mobile/image-header.jpg) no-repeat;
       background-size: 100%;
@@ -36,11 +39,34 @@
       height: 400px;
       padding: 25px;
     }
+    footer{
+      background-color: hsl(167, 44%, 70%);
+      color: hsl(168, 34%, 41%);
+      padding: 60px 0;
+    }
+    .socials{
+      justify-content: center;
+      gap: 15px;
+    }
+    .footer-menu{
+      justify-content: space-evenly;
+      margin: 35px 0 70px 0;
+    }
+    .user-comments img {
+        border-radius: 50%;
+        width: 20%;
+    }
     .menu{
         display: none;
     }
     .flex{
       display: flex;
+    }
+    .wrap{
+      flex-wrap: wrap;
+    }
+    .img-mob{
+      width: 50%;
     }
     .column{
       flex-direction: column;
@@ -48,11 +74,17 @@
     .column-reverse{
       flex-direction: column-reverse;
     }
-    .text-intern{
+    .center{
       text-align: center;
+    }
+    .uppercase{
+      text-transform: uppercase;
     }
     .title{
       font-family: 'Fraunces', serif;
+    }
+    ul{
+      list-style:none;
     }
   </style>
 </head>
@@ -73,7 +105,7 @@
   </header>
   <main>
     <section class="flex column-reverse">
-      <div class="text-intern">
+      <div class="center">
         <h1 class="title">Transform your brand</h1>
         <p>We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -83,47 +115,79 @@
     </section>
     <section class="flex column">
       <img src="images/mobile/image-stand-out.jpg"/>
-      <div class="text-intern">
+      <div class="center">
         <h1 class="title">Stand out to the right audience</h1>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>       
         <button>Learn more</button>
       </div>
     </section>
     <section class="flex column">
-      <div class="text-intern background-chery">
+      <div class="center background-chery">
         <h1 class="title">Graphic design</h1>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
       </div>
-      <div class="text-intern background-orange">
+      <div class="center background-orange">
         <h1 class="title">Photography</h1>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
      </div>
     </section>
-
+    <section class="flex column comments">
+      <div class="center">
+        <h1 class="title uppercase">Client testimonials</h1>
+      </div>
+      <div class="user-comments container">
+        <ul>
+          <li class="center">
+            <img src="images/image-emily.jpg" loading="lazy"/>
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            </p>
+            <p class="name">Emily R.</p>
+            <span>Marketing Director</span>
+          </li>
+          <li class="center">
+            <img src="images/image-thomas.jpg" loading="lazy"/>
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="name">Thomas S.</p>
+            <span>Chief Operating Officer</span>
+          </li>
+          <li class="center">
+            <img src="images/image-jennie.jpg" loading="lazy"/>
+            <p>
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="name">Jennie F.</p>
+            <span>Business Owner</span>
+          </li>
+        </ul>
+     </div>
+    </section>
+    <section class="flex wrap">
+      <img class="img-mob" src="/images/mobile/image-gallery-milkbottles.jpg" loading="lazy"/>
+      <img class="img-mob" src="/images/mobile/image-gallery-orange.jpg" loading="lazy"/>
+      <img class="img-mob" src="/images/mobile/image-gallery-cone.jpg" loading="lazy"/>
+      <img class="img-mob" src="/images/mobile/image-gallery-sugar-cubes.jpg" loading="lazy"/>
+    </section>
   </main>
+  <footer class="center">
+    <div class="logo"><img src="images/logo.svg" alt="Logo do Site" loading="lazy"/></div>
+    <ul class="flex footer-menu">
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+    </ul>  
+    <ul class="flex socials">
+      <li><img src="/images/icon-facebook.svg" alt="Facebook" loading="lazy"></li>
+      <li><img src="/images/icon-instagram.svg" alt="Instagram" loading="lazy"></li>
+      <li><img src="/images/icon-twitter.svg" alt="Twitter" loading="lazy"></li>
+      <li><img src="/images/icon-pinterest.svg" alt="Pinterest" loading="lazy"></li>
+    </ul>  
+  </footer>
   <!-- 
 
   We are creatives - adicionar na laranja
-
-
-
-  
-  
-
-  
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
 
   About
   Services
